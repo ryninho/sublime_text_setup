@@ -1,0 +1,12 @@
+[
+  { "keys": ["super+r"], "command": "repl_transfer_current", "args": {"scope": "selection"}},
+  { "keys": ["super+enter"], "command": "run_multiple_commands", "args":
+    { "commands":
+    [
+      {"command": "repl_transfer_current", "args": {"scope": "lines"}},
+      {"command": "move", "args": {"by": "lines", "forward": true}}
+    ]
+    }
+  }
+]
+
